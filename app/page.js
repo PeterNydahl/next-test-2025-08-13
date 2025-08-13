@@ -12,6 +12,6 @@ export default async function HomePage() {
   // );
 
   return (
-    <p>Next is now on tontid.nu!</p>
+    <p>Next is now on tontid.nu! WIth an update!</p>
   );
 }
