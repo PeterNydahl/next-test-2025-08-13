@@ -1,7 +1,13 @@
-import Image from "next/image";
 
-export default function Home() {
+export default async function HomePage() {
+  const res = await fetch('https://gozando.se.se/wp-json/greetings/v1/hello', {
+    cache: 'no-store' // hämtar alltid färsk data
+  });
+  const data = await res.json();
+
   return (
-    <p>Hello world again!</p>
+    <main>
+      <h1>{data.greeting}</h1>
+    </main>
   );
 }
