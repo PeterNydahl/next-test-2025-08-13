@@ -1,6 +1,6 @@
 
 export default async function HomePage() {
-  const res = await fetch('https://gozando.se/wp-json/greetings/v1/hello', {
+  const res = await fetch('https://www.gozando.se/wp-json/greetings/v1/hello', {
     cache: 'no-store' // hämtar alltid färsk data
   });
   const data = await res.json();
